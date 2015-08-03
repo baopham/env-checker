@@ -1,0 +1,21 @@
+{
+    "name": "baopham/env-checker",
+    "description": "",
+    "require": {
+        "illuminate/console": "5.1.*",
+        "illuminate/support": "5.1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bao Pham",
+            "email": "gbaopham@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BaoPham\\EnvChecker\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
