@@ -1,6 +1,6 @@
 {
     "name": "baopham/env-checker",
-    "description": "",
+    "description": "Artisan command to check if all required variables are configured in .env",
     "require": {
         "illuminate/console": "5.1.*",
         "illuminate/support": "5.1.*"
