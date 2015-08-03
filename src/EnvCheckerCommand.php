@@ -46,7 +46,7 @@ class EnvCheckerCommand extends Command
 
         foreach ($envVariables as $variable) {
             $value = env($variable);
-            if (empty($value)) {
+            if (!isset($value) || $value === '') {
                 $missingVariables[] = $variable;
             }
         }
