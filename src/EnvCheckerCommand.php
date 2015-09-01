@@ -52,7 +52,7 @@ class EnvCheckerCommand extends Command
         }
 
         if (!empty($missingVariables)) {
-            throw new MissingVariableException('Variables not configured in .env: ' . implode("\n", $missingVariables));
+            throw new MissingVariableException('Variables not configured in .env: ' . "\n" . implode("\n", $missingVariables));
         }
 
         $this->info("Your .env has all the required variables configured.");
