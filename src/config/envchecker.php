@@ -2,12 +2,12 @@
 
 return [
     'variables' => [
-        'APP_ENV',
-        'APP_KEY',
-        'APP_URL',
-        'DB_HOST',
-        'DB_DATABASE',
-        'DB_USERNAME',
-        'DB_PASSWORD',
+        'APP_ENV' => 'local',
+        'APP_KEY' => 'secret!!!!',
+        'APP_URL' => 'http://foo.dev',
+        'DB_HOST' => null,
+        'DB_DATABASE' => null,
+        'DB_USERNAME' => null,
+        'DB_PASSWORD' => null,
     ],
 ];

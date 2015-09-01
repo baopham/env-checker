@@ -37,13 +37,13 @@ $ php artisan vendor:publish --provider="BaoPham\EnvChecker\EnvCheckerServicePro
 ```php
 return [
     'variables' => [
-        'APP_ENV',
-        'APP_KEY',
-        'APP_URL',
-        'DB_HOST',
-        'DB_DATABASE',
-        'DB_USERNAME',
-        'DB_PASSWORD',
+        'APP_ENV' => 'suggested default value',
+        'APP_KEY' => 'or you can assign it to null like below',
+        'APP_URL' => null,
+        'DB_HOST' => null,
+        'DB_DATABASE' => 'homestead',
+        'DB_USERNAME' => null,
+        'DB_PASSWORD' => null,
         // any other variables required for your app.
     ],
 ];

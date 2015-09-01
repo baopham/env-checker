@@ -44,15 +44,15 @@ class EnvCheckerCommand extends Command
         $envVariables = config('envchecker.variables', []);
         $missingVariables = [];
 
-        foreach ($envVariables as $variable) {
+        foreach ($envVariables as $variable => $defaultValue) {
             $value = env($variable);
             if (!isset($value) || $value === '') {
-                $missingVariables[] = $variable;
+                $missingVariables[] = $variable . ' = ' . $defaultValue;
             }
         }
 
         if (!empty($missingVariables)) {
-            throw new MissingVariableException('Variables not configured in .env: ' . implode(', ', $missingVariables));
+            throw new MissingVariableException('Variables not configured in .env: ' . implode("\n", $missingVariables));
         }
 
         $this->info("Your .env has all the required variables configured.");
