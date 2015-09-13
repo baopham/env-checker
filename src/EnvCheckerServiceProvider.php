@@ -23,9 +23,7 @@ class EnvCheckerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/config/envchecker.php' => config_path('envchecker.php'),
-        ], 'config');
+
     }
 
     /**

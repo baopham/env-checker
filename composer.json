@@ -5,6 +5,9 @@
         "illuminate/console": "5.1.*",
         "illuminate/support": "5.1.*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0@dev"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -17,5 +20,10 @@
             "BaoPham\\EnvChecker\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    }
 }
